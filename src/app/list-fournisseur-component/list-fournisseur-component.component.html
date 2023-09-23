@@ -1,0 +1,18 @@
+<p>list-fournisseur-component works!</p>
+
+
+<div *ngFor="let p of fournisseurs">
+    
+    <fieldset [style.background-color]="getBackgroundColor(p.libelle)"  *ngIf="p.idFournisseur>= 0">
+<br>
+ <p> -------------      id fournisseurs{{p.idFournisseur}}</p>
+    
+    
+    
+  <p [style.font-weight]="getColor(p.code)">code{{p.code}}</p>
+    
+  <p>libelle{{p.libelle}}</p>
+    </fieldset>
+    
+
+</div>
